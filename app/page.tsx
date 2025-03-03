@@ -262,8 +262,8 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm">
-                    "The team at Dealitz knows exactly how to position creators to brands. They helped me land
-                    partnerships with premium fitness brands that aligned perfectly with my audience."
+                    &quot;The team at Dealitz knows exactly how to position creators to brands. They helped me land
+                    partnerships with premium fitness brands that aligned perfectly with my audience.&quot;
                   </p>
                 </CardContent>
                 <CardFooter className="text-sm text-muted-foreground">Rate increase: 180%</CardFooter>
@@ -276,7 +276,7 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Brands We&apos;ve Worked With</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Brands We&apos;ve Worked With</h2>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
                   Louise has negotiated successful partnerships with leading global brands
                 </p>
@@ -284,7 +284,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 mt-12">
               <div className="flex items-center justify-center p-6 bg-muted rounded-lg h-24">
-                <p className="font-semibold text-lg">L'Oréal</p>
+                <p className="font-semibold text-lg">L&apos;Oréal</p>
               </div>
               <div className="flex items-center justify-center p-6 bg-muted rounded-lg h-24">
                 <p className="font-semibold text-lg">SK-II</p>
@@ -320,14 +320,14 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Meet Your Consultant</h2>
                 <h3 className="text-xl font-semibold">Louise Leong, Founder & Lead Consultant</h3>
                 <p className="text-muted-foreground">
-                  I'm a strategic marketing and business leader with a proven track record of driving growth, digital
+                  I&apos;m a strategic marketing and business leader with a proven track record of driving growth, digital
                   transformation, and high-impact partnerships across APAC. I specialize in scaling businesses in Tech,
                   Beauty, and FMCG through omnichannel marketing and innovative go-to-market strategies. My expertise
                   lies in brand strategy, consumer insights, and data-driven decision-making.
                 </p>
                 <p className="text-muted-foreground">
                   My experience leading regional client and agency partnerships includes doubling FMCG revenue, driving
-                  a +56% YoY growth in SEA's Health & Beauty category, and leading digital commerce innovations featured
+                  a +56% YoY growth in SEA&apos;s Health & Beauty category, and leading digital commerce innovations featured
                   in Forbes Asia and Meta global case studies.
                 </p>
                 <div className="flex gap-4">

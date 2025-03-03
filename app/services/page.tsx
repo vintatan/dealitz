@@ -249,8 +249,8 @@ export default function ServicesPage() {
               <div className="space-y-2">
                 <h3 className="text-xl font-bold">How do you guarantee rate increases?</h3>
                 <p className="text-muted-foreground">
-                  Our guarantee is based on our proven track record and industry expertise. If we don't achieve the
-                  guaranteed increase, we'll continue working with you at no additional cost until we do.
+                  Our guarantee is based on our proven track record and industry expertise. If we don&apos;t achieve the
+                  guaranteed increase, we&apos;ll continue working with you at no additional cost until we do.
                 </p>
               </div>
               <div className="space-y-2">
@@ -304,7 +304,7 @@ export default function ServicesPage() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 mt-12">
               <div className="flex items-center justify-center p-4 bg-background rounded-lg h-24 shadow-sm">
-                <p className="font-semibold text-lg">L'Oréal</p>
+                <p className="font-semibold text-lg">L&apos;Oréal</p>
               </div>
               <div className="flex items-center justify-center p-4 bg-background rounded-lg h-24 shadow-sm">
                 <p className="font-semibold text-lg">SK-II</p>

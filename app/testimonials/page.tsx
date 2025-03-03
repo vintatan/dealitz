@@ -101,7 +101,7 @@ export default function TestimonialsPage() {
                   </div>
                   <CardTitle>Meg Wardrop</CardTitle>
                   <CardDescription>
-                    Senior Marketing Professional | Brand Manager @ L'Oreal (YSL Beauty) | Ex-Meta
+                    Senior Marketing Professional | Brand Manager @ L&apos;Oreal (YSL Beauty) | Ex-Meta
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
