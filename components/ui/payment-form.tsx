@@ -35,17 +35,16 @@ export default function PaymentForm({ amount, service }: PaymentFormProps) {
       }
 
       // If the form is valid, confirm the payment
-      const { error, paymentIntent } = await stripe.confirmPayment({
-        redirect: 'if_required',
+      const { error } = await stripe.confirmPayment({
+        elements,
+        confirmParams: {
+          return_url: `${window.location.origin}/payment/success?service=${encodeURIComponent(service)}&amount=${amount}`,
+        }
       })
 
+      // Only handle errors here since successful payments will redirect
       if (error) {
         throw new Error(error.message)
-      }
-
-      if (paymentIntent.status === 'succeeded') {
-        setMessage("")
-        router.push(`/payment/success?service=${encodeURIComponent(service)}&amount=${amount}`)
       }
     } catch (error) {
       if (error instanceof Error) {
