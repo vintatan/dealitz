@@ -42,7 +42,7 @@ export default function TestimonialsPage() {
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Success Stories</h1>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  See how we've helped content creators increase their brand deal value
+                  See how we&apos;ve helped content creators increase their brand deal value
                 </p>
               </div>
             </div>
