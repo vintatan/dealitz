@@ -41,7 +41,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Dealitz</h1>
                 <p className="text-muted-foreground md:text-xl">
-                  We're on a mission to help content creators maximize their value and build sustainable partnerships
+                  We&apos;re on a mission to help content creators maximize their value and build sustainable partnerships
                   with top brands.
                 </p>
               </div>
@@ -72,7 +72,7 @@ export default function AboutPage() {
                   and data-driven decision-making, I specialize in scaling businesses in Tech, Beauty, and FMCG through
                   omnichannel marketing and innovative go-to-market strategies. With experience leading regional client
                   and agency partnerships, I have successfully connected content creators / influencers and brands in
-                  SEA's Health & Beauty category, and led digital commerce innovations featured in Forbes Asia and Meta
+                  SEA&apos;s Health & Beauty category, and led digital commerce innovations featured in Forbes Asia and Meta
                   global case studies.
                 </p>
                 <div className="flex gap-4">
