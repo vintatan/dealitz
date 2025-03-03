@@ -35,29 +35,13 @@ export default function AboutPage() {
         </div>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="space-y-4">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Dealitz</h1>
-                <p className="text-muted-foreground md:text-xl">
-                  We&apos;re on a mission to help content creators maximize their value and build sustainable partnerships
-                  with top brands.
-                </p>
-              </div>
-              <div className="relative h-[300px] w-full overflow-hidden rounded-xl">
-                <Image src="/placeholder.svg?height=600&width=800" alt="Team meeting" fill className="object-cover" />
-              </div>
-            </div>
-          </div>
-        </section>
 
         <section className="w-full py-12 md:py-24 bg-background">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="relative h-[500px] w-full overflow-hidden rounded-xl">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1740935224586-vqac6EPlrfRVA5BCZHGF3ibZlUdiFh.jpeg"
+                  src="/louise-leong.jpeg"
                   alt="Louise Leong, Founder & Lead Consultant"
                   fill
                   className="object-cover"

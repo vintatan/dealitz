@@ -31,7 +31,13 @@ export default function Home() {
             </Link>
           </nav>
           <Button asChild>
-            <Link href="/contact">Book a Consultation</Link>
+            <Link 
+              href="https://calendar.app.google/wB1omY677WmGHPtX9" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Book a Consultation
+            </Link>
           </Button>
         </div>
       </header>
@@ -54,7 +60,13 @@ export default function Home() {
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" asChild>
-                    <Link href="/contact">Book a Free Consultation</Link>
+                    <Link 
+                      href="https://calendar.app.google/wB1omY677WmGHPtX9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Book a Free Consultation
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -201,105 +213,48 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Success Stories</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Approach</h2>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  See how we&apos;ve helped content creators increase their brand deal value
+                  A proven methodology to maximize your brand partnerships
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-              <Card>
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                  </div>
-                  <CardTitle>Sarah J.</CardTitle>
-                  <CardDescription>Beauty & Lifestyle Creator, 120K followers</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm">
-                    &quot;Working with Dealitz transformed my brand partnerships. They negotiated a deal with L&apos;Oréal that
-                    was 3x my previous rate. Their expertise and industry connections are invaluable.&quot;
-                  </p>
-                </CardContent>
-                <CardFooter className="text-sm text-muted-foreground">Rate increase: 200%</CardFooter>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                  </div>
-                  <CardTitle>Michael T.</CardTitle>
-                  <CardDescription>Tech Reviewer, 450K followers</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm">
-                    &quot;I was undervaluing my content for years. Dealitz helped me secure a 6-figure annual partnership
-                    with a major tech brand that I never thought possible.&quot;
-                  </p>
-                </CardContent>
-                <CardFooter className="text-sm text-muted-foreground">Rate increase: 350%</CardFooter>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                  </div>
-                  <CardTitle>Aisha K.</CardTitle>
-                  <CardDescription>Fitness Influencer, 75K followers</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm">
-                    &quot;The team at Dealitz knows exactly how to position creators to brands. They helped me land
-                    partnerships with premium fitness brands that aligned perfectly with my audience.&quot;
-                  </p>
-                </CardContent>
-                <CardFooter className="text-sm text-muted-foreground">Rate increase: 180%</CardFooter>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        <section className="w-full py-12 md:py-24 bg-background">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Brands We&apos;ve Worked With</h2>
-                <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  Louise has negotiated successful partnerships with leading global brands
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-12">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground font-bold text-xl">
+                  1
+                </div>
+                <h3 className="text-xl font-bold">Assessment</h3>
+                <p className="text-muted-foreground">
+                  Deep analysis of your content, audience demographics, and current brand partnerships
                 </p>
               </div>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 mt-12">
-              <div className="flex items-center justify-center p-6 bg-muted rounded-lg h-24">
-                <p className="font-semibold text-lg">L&apos;Oréal</p>
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground font-bold text-xl">
+                  2
+                </div>
+                <h3 className="text-xl font-bold">Strategy</h3>
+                <p className="text-muted-foreground">
+                  Custom negotiation strategy based on your unique value proposition
+                </p>
               </div>
-              <div className="flex items-center justify-center p-6 bg-muted rounded-lg h-24">
-                <p className="font-semibold text-lg">SK-II</p>
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground font-bold text-xl">
+                  3
+                </div>
+                <h3 className="text-xl font-bold">Negotiation</h3>
+                <p className="text-muted-foreground">
+                  Expert negotiation with brands to secure the best possible terms
+                </p>
               </div>
-              <div className="flex items-center justify-center p-6 bg-muted rounded-lg h-24">
-                <p className="font-semibold text-lg">Samsung</p>
-              </div>
-              <div className="flex items-center justify-center p-6 bg-muted rounded-lg h-24">
-                <p className="font-semibold text-lg">Nike</p>
-              </div>
-              <div className="flex items-center justify-center p-6 bg-muted rounded-lg h-24">
-                <p className="font-semibold text-lg">Sephora</p>
-              </div>
-              <div className="flex items-center justify-center p-6 bg-muted rounded-lg h-24">
-                <p className="font-semibold text-lg">Adidas</p>
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground font-bold text-xl">
+                  4
+                </div>
+                <h3 className="text-xl font-bold">Growth</h3>
+                <p className="text-muted-foreground">
+                  Ongoing support to build long-term, profitable partnerships
+                </p>
               </div>
             </div>
           </div>
@@ -309,7 +264,7 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="relative h-[400px] w-full overflow-hidden rounded-xl">
-                <Image
+              <Image
                   src="/louise-leong.jpeg"
                   alt="Louise Leong, Founder & Lead Consultant"
                   fill
@@ -326,8 +281,8 @@ export default function Home() {
                   lies in brand strategy, consumer insights, and data-driven decision-making.
                 </p>
                 <p className="text-muted-foreground">
-                  My experience leading regional client and agency partnerships includes doubling FMCG revenue, driving
-                  a +56% YoY growth in SEA&apos;s Health & Beauty category, and leading digital commerce innovations featured
+                  My experience leading content creators, regional client and agency partnerships includes doubling FMCG revenue, driving 
+                  growth in SEA&apos;s Health & Beauty category, and leading digital commerce innovations featured
                   in Forbes Asia and Meta global case studies.
                 </p>
                 <div className="flex gap-4">
@@ -335,9 +290,6 @@ export default function Home() {
                     <Link href="https://www.linkedin.com/in/louise-leong/" target="_blank" rel="noopener noreferrer">
                       View LinkedIn Profile
                     </Link>
-                  </Button>
-                  <Button asChild>
-                    <Link href="/about">Learn More</Link>
                   </Button>
                 </div>
               </div>
@@ -354,7 +306,13 @@ export default function Home() {
               Book a free consultation to discover how we can help you increase your brand deal rates.
             </p>
             <Button size="lg" variant="secondary" asChild>
-              <Link href="/contact">Schedule Your Free Consultation</Link>
+              <Link 
+                href="https://calendar.app.google/wB1omY677WmGHPtX9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Schedule Your Free Consultation
+              </Link>
             </Button>
           </div>
         </section>
