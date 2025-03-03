@@ -58,13 +58,13 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
-              <div className="relative h-[400px] w-full overflow-hidden rounded-xl">
-                <Image
-                  src="/placeholder.svg?height=800&width=1200"
-                  alt="Content creators in a professional meeting"
-                  fill
-                  className="object-cover"
-                  priority
+              <div className="relative aspect-video w-full overflow-hidden rounded-xl">
+                <iframe
+                  src="https://www.youtube.com/embed/TAZ5bzxrpZM"
+                  title="Dealitz Brand Deal Services"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full border-0"
                 />
               </div>
             </div>
