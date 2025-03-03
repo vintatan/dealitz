@@ -1,11 +1,10 @@
 import Link from "next/link"
-import Image from "next/image"
-import { ArrowRight, CheckCircle, Star } from "lucide-react"
+import { CheckCircle } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
-export default function Home() {
+export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -20,7 +19,7 @@ export default function Home() {
             <Link href="/about" className="text-sm font-medium hover:text-primary">
               About
             </Link>
-            <Link href="/services" className="text-sm font-medium hover:text-primary">
+            <Link href="/services" className="text-sm font-medium text-primary">
               Services
             </Link>
             <Link href="/testimonials" className="text-sm font-medium hover:text-primary">
@@ -36,36 +35,14 @@ export default function Home() {
         </div>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background to-muted">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="space-y-4">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-                  Maximize Your Brand Deal Value
-                </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Expert negotiation services for content creators. We help you secure better deals with top brands like
-                  L'Oréal, SK-II, and more.
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Services</h1>
+                <p className="max-w-[700px] text-muted-foreground md:text-xl">
+                  Tailored packages to help content creators of all sizes maximize their brand partnership value
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" asChild>
-                    <Link href="/services">
-                      View Our Services <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                  <Button size="lg" variant="outline" asChild>
-                    <Link href="/contact">Book a Free Consultation</Link>
-                  </Button>
-                </div>
-              </div>
-              <div className="relative h-[400px] w-full overflow-hidden rounded-xl">
-                <Image
-                  src="/placeholder.svg?height=800&width=1200"
-                  alt="Content creators in a professional meeting"
-                  fill
-                  className="object-cover"
-                  priority
-                />
               </div>
             </div>
           </div>
@@ -73,15 +50,7 @@ export default function Home() {
 
         <section className="w-full py-12 md:py-24 bg-background">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Services</h2>
-                <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  Tailored packages to match your influence level and growth goals
-                </p>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card className="flex flex-col">
                 <CardHeader>
                   <CardTitle>Emerging Creator</CardTitle>
@@ -89,7 +58,9 @@ export default function Home() {
                 </CardHeader>
                 <CardContent className="flex-1">
                   <div className="text-4xl font-bold mb-4">$97</div>
-                  <p className="text-sm">Money-back guarantee if we don't secure an additional $1,000 in brand deals</p>
+                  <p className="text-sm text-muted-foreground">
+                    Money-back guarantee if we don't secure an additional $1,000 in brand deals
+                  </p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -106,6 +77,10 @@ export default function Home() {
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                       <span>30-day email support</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span>Guaranteed 20% rate increase</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -124,7 +99,9 @@ export default function Home() {
                 </CardHeader>
                 <CardContent className="flex-1">
                   <div className="text-4xl font-bold mb-4">$497</div>
-                  <p className="text-sm">Money-back guarantee if we don't secure an additional $5,000 in brand deals</p>
+                  <p className="text-sm text-muted-foreground">
+                    Money-back guarantee if we don't secure an additional $5,000 in brand deals
+                  </p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -146,6 +123,10 @@ export default function Home() {
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                       <span>Guaranteed 30% rate increase</span>
                     </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span>Quarterly strategy sessions</span>
+                    </li>
                   </ul>
                 </CardContent>
                 <CardFooter>
@@ -161,7 +142,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent className="flex-1">
                   <div className="text-4xl font-bold mb-4">$997</div>
-                  <p className="text-sm">
+                  <p className="text-sm text-muted-foreground">
                     Money-back guarantee if we don't secure an additional $10,000 in brand deals
                   </p>
                   <ul className="space-y-2">
@@ -185,6 +166,14 @@ export default function Home() {
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                       <span>Guaranteed 50% rate increase</span>
                     </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span>Multi-platform strategy</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span>Monthly strategy sessions</span>
+                    </li>
                   </ul>
                 </CardContent>
                 <CardFooter>
@@ -201,73 +190,49 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Success Stories</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Process</h2>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  See how we've helped content creators increase their brand deal value
+                  How we help you maximize your brand partnership value
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-              <Card>
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                  </div>
-                  <CardTitle>Sarah J.</CardTitle>
-                  <CardDescription>Beauty & Lifestyle Creator, 120K followers</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm">
-                    "Working with Dealitz transformed my brand partnerships. They negotiated a deal with L'Oréal that
-                    was 3x my previous rate. Their expertise and industry connections are invaluable."
-                  </p>
-                </CardContent>
-                <CardFooter className="text-sm text-muted-foreground">Rate increase: 200%</CardFooter>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                  </div>
-                  <CardTitle>Michael T.</CardTitle>
-                  <CardDescription>Tech Reviewer, 450K followers</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm">
-                    "I was undervaluing my content for years. Dealitz helped me secure a 6-figure annual partnership
-                    with a major tech brand that I never thought possible."
-                  </p>
-                </CardContent>
-                <CardFooter className="text-sm text-muted-foreground">Rate increase: 350%</CardFooter>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                  </div>
-                  <CardTitle>Aisha K.</CardTitle>
-                  <CardDescription>Fitness Influencer, 75K followers</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm">
-                    "The team at Dealitz knows exactly how to position creators to brands. They helped me land
-                    partnerships with premium fitness brands that aligned perfectly with my audience."
-                  </p>
-                </CardContent>
-                <CardFooter className="text-sm text-muted-foreground">Rate increase: 180%</CardFooter>
-              </Card>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-12">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground font-bold text-xl">
+                  1
+                </div>
+                <h3 className="text-xl font-bold">Assessment</h3>
+                <p className="text-muted-foreground">
+                  We analyze your content, audience demographics, engagement metrics, and current brand partnerships.
+                </p>
+              </div>
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground font-bold text-xl">
+                  2
+                </div>
+                <h3 className="text-xl font-bold">Strategy</h3>
+                <p className="text-muted-foreground">
+                  We develop a customized negotiation strategy based on your unique value proposition and target brands.
+                </p>
+              </div>
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground font-bold text-xl">
+                  3
+                </div>
+                <h3 className="text-xl font-bold">Negotiation</h3>
+                <p className="text-muted-foreground">
+                  Our expert team negotiates with brands on your behalf to secure the best possible terms and rates.
+                </p>
+              </div>
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground font-bold text-xl">
+                  4
+                </div>
+                <h3 className="text-xl font-bold">Growth</h3>
+                <p className="text-muted-foreground">
+                  We provide ongoing support and strategy to help you build long-term, profitable brand partnerships.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -276,70 +241,103 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Brands We've Worked With</h2>
-                <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  Louise has negotiated successful partnerships with leading global brands
-                </p>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Frequently Asked Questions</h2>
+                <p className="max-w-[700px] text-muted-foreground md:text-xl">Common questions about our services</p>
               </div>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 mt-12">
-              <div className="flex items-center justify-center p-6 bg-muted rounded-lg h-24">
-                <p className="font-semibold text-lg">L'Oréal</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold">How do you guarantee rate increases?</h3>
+                <p className="text-muted-foreground">
+                  Our guarantee is based on our proven track record and industry expertise. If we don't achieve the
+                  guaranteed increase, we'll continue working with you at no additional cost until we do.
+                </p>
               </div>
-              <div className="flex items-center justify-center p-6 bg-muted rounded-lg h-24">
-                <p className="font-semibold text-lg">SK-II</p>
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold">Do you work with creators in all niches?</h3>
+                <p className="text-muted-foreground">
+                  Yes, we work with creators across all content categories including beauty, fashion, tech, gaming,
+                  fitness, lifestyle, food, travel, and more.
+                </p>
               </div>
-              <div className="flex items-center justify-center p-6 bg-muted rounded-lg h-24">
-                <p className="font-semibold text-lg">Samsung</p>
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold">How long does the process take?</h3>
+                <p className="text-muted-foreground">
+                  Typically, we can secure improved brand deals within 30-60 days of starting our work together,
+                  depending on your package and current opportunities.
+                </p>
               </div>
-              <div className="flex items-center justify-center p-6 bg-muted rounded-lg h-24">
-                <p className="font-semibold text-lg">Nike</p>
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold">What if I have fewer than 10K followers?</h3>
+                <p className="text-muted-foreground">
+                  We offer custom solutions for micro-influencers with highly engaged audiences. Contact us for a
+                  personalized consultation.
+                </p>
               </div>
-              <div className="flex items-center justify-center p-6 bg-muted rounded-lg h-24">
-                <p className="font-semibold text-lg">Sephora</p>
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold">Do you help with contract negotiations?</h3>
+                <p className="text-muted-foreground">
+                  Yes, contract review and negotiation is a core part of our service. We ensure you get favorable terms
+                  beyond just the payment amount.
+                </p>
               </div>
-              <div className="flex items-center justify-center p-6 bg-muted rounded-lg h-24">
-                <p className="font-semibold text-lg">Adidas</p>
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold">What platforms do you specialize in?</h3>
+                <p className="text-muted-foreground">
+                  We work with creators on all major platforms including Instagram, TikTok, YouTube, Twitch, and
+                  emerging platforms.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-24 bg-background">
+        <section className="w-full py-12 md:py-24 bg-muted">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="relative h-[400px] w-full overflow-hidden rounded-xl">
-                <Image
-                  src="/louise-leong.jpeg"
-                  alt="Louise Leong, Founder & Lead Consultant"
-                  fill
-                  className="object-cover"
-                />
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Brands We Work With</h2>
+                <p className="max-w-[700px] text-muted-foreground md:text-xl">
+                  We have established relationships with top brands across industries
+                </p>
               </div>
-              <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Meet Your Consultant</h2>
-                <h3 className="text-xl font-semibold">Louise Leong, Founder & Lead Consultant</h3>
-                <p className="text-muted-foreground">
-                  I'm a strategic marketing and business leader with a proven track record of driving growth, digital
-                  transformation, and high-impact partnerships across APAC. I specialize in scaling businesses in Tech,
-                  Beauty, and FMCG through omnichannel marketing and innovative go-to-market strategies. My expertise
-                  lies in brand strategy, consumer insights, and data-driven decision-making.
-                </p>
-                <p className="text-muted-foreground">
-                  My experience leading regional client and agency partnerships includes doubling FMCG revenue, driving
-                  a +56% YoY growth in SEA's Health & Beauty category, and leading digital commerce innovations featured
-                  in Forbes Asia and Meta global case studies.
-                </p>
-                <div className="flex gap-4">
-                  <Button variant="outline" asChild>
-                    <Link href="https://www.linkedin.com/in/louise-leong/" target="_blank" rel="noopener noreferrer">
-                      View LinkedIn Profile
-                    </Link>
-                  </Button>
-                  <Button asChild>
-                    <Link href="/about">Learn More</Link>
-                  </Button>
-                </div>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 mt-12">
+              <div className="flex items-center justify-center p-4 bg-background rounded-lg h-24 shadow-sm">
+                <p className="font-semibold text-lg">L'Oréal</p>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-background rounded-lg h-24 shadow-sm">
+                <p className="font-semibold text-lg">SK-II</p>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-background rounded-lg h-24 shadow-sm">
+                <p className="font-semibold text-lg">Samsung</p>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-background rounded-lg h-24 shadow-sm">
+                <p className="font-semibold text-lg">Nike</p>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-background rounded-lg h-24 shadow-sm">
+                <p className="font-semibold text-lg">Sephora</p>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-background rounded-lg h-24 shadow-sm">
+                <p className="font-semibold text-lg">Adidas</p>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-background rounded-lg h-24 shadow-sm">
+                <p className="font-semibold text-lg">Shopee</p>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-background rounded-lg h-24 shadow-sm">
+                <p className="font-semibold text-lg">Lazada</p>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-background rounded-lg h-24 shadow-sm">
+                <p className="font-semibold text-lg">Estée Lauder</p>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-background rounded-lg h-24 shadow-sm">
+                <p className="font-semibold text-lg">Unilever</p>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-background rounded-lg h-24 shadow-sm">
+                <p className="font-semibold text-lg">P&G</p>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-background rounded-lg h-24 shadow-sm">
+                <p className="font-semibold text-lg">Shiseido</p>
               </div>
             </div>
           </div>
