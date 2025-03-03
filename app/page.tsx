@@ -13,20 +13,17 @@ export default function Home() {
           <Link href="/" className="flex items-center gap-2 font-bold text-xl">
             <span className="text-primary">Deal</span>itz
           </Link>
-          <nav className="hidden md:flex gap-6">
-            <Link href="/" className="text-sm font-medium hover:text-primary">
+          <nav className="flex items-center space-x-8">
+            <Link href="/" className="text-foreground/60 hover:text-foreground">
               Home
             </Link>
-            <Link href="/about" className="text-sm font-medium hover:text-primary">
+            <Link href="/about" className="text-foreground/60 hover:text-foreground">
               About
             </Link>
-            <Link href="/services" className="text-sm font-medium hover:text-primary">
-              Services
-            </Link>
-            <Link href="/testimonials" className="text-sm font-medium hover:text-primary">
+            <Link href="/testimonials" className="text-foreground/60 hover:text-foreground">
               Testimonials
             </Link>
-            <Link href="/contact" className="text-sm font-medium hover:text-primary">
+            <Link href="/contact" className="text-foreground/60 hover:text-foreground">
               Contact
             </Link>
           </nav>
@@ -123,7 +120,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter>
                   <Button className="w-full" asChild>
-                    <Link href="/contact">Get Started</Link>
+                    <Link href="/payment?service=emerging&price=97">Get Started</Link>
                   </Button>
                 </CardFooter>
               </Card>
@@ -162,7 +159,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter>
                   <Button className="w-full" asChild>
-                    <Link href="/contact">Get Started</Link>
+                    <Link href="/payment?service=established&price=497">Get Started</Link>
                   </Button>
                 </CardFooter>
               </Card>
@@ -201,7 +198,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter>
                   <Button className="w-full" asChild>
-                    <Link href="/contact">Get Started</Link>
+                    <Link href="/payment?service=elite&price=997">Get Started</Link>
                   </Button>
                 </CardFooter>
               </Card>
@@ -371,11 +368,6 @@ export default function Home() {
             <div className="space-y-4">
               <h3 className="text-sm font-medium">Legal</h3>
               <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="/privacy" className="text-muted-foreground hover:text-foreground">
-                    Privacy Policy
-                  </Link>
-                </li>
                 <li>
                   <Link href="/terms" className="text-muted-foreground hover:text-foreground">
                     Terms of Service
