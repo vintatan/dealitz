@@ -145,7 +145,7 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
               <div className="flex flex-col items-center justify-center p-6 bg-muted rounded-lg h-32">
-                <p className="font-semibold text-xl mb-2">L'Oréal</p>
+                <p className="font-semibold text-xl mb-2">L&apos;Oréal</p>
                 <p className="text-sm text-muted-foreground">Beauty & Cosmetics</p>
               </div>
               <div className="flex flex-col items-center justify-center p-6 bg-muted rounded-lg h-32">

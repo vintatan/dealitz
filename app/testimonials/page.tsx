@@ -74,13 +74,13 @@ export default function TestimonialsPage() {
                     />
                   </div>
                   <p className="text-muted-foreground">
-                    "I had the pleasure of recruiting and working with Louise in her role of regional client partner at
+                    &quot;I had the pleasure of recruiting and working with Louise in her role of regional client partner at
                     Meta. What makes Louise stand out is her commitment to her clients and relationships she build in
                     her role. Her willingness to put clients and agencies at the center of her work was a critical trait
                     in Louise being successful in her role. At a human level Louise was consistent in bringing a
                     positive mindset and being additive to the culture of our team, whether that be leading important
                     initiatives or supporting those who were. Thank you Louise for all you did for me, the team and Meta
-                    during our time together!"
+                    during our time together!&quot;
                   </p>
                 </CardContent>
                 <CardFooter className="text-sm border-t pt-4 mt-auto">
@@ -114,12 +114,12 @@ export default function TestimonialsPage() {
                     />
                   </div>
                   <p className="text-muted-foreground">
-                    "Louise became a friend and mentor to me during my time at Meta. She is a person I look up to and
+                    &quot;Louise became a friend and mentor to me during my time at Meta. She is a person I look up to and
                     can turn to for honest advice when I need it. Louise has been an invaluable support in helping me
                     find my next opportunity from editing my resume to sharing interview advice and warm intros to those
                     in her network. She is an extremely driven and impressive leader, with an incredible ability to
                     build connection & drive growth for her clients. Louise is very well respected at Meta and has made
-                    a huge impact during her time with the business. Those who get to work with Louise are so lucky!"
+                    a huge impact during her time with the business. Those who get to work with Louise are so lucky!&quot;
                   </p>
                 </CardContent>
                 <CardFooter className="text-sm border-t pt-4 mt-auto">
@@ -146,10 +146,10 @@ export default function TestimonialsPage() {
                     <Image src="/placeholder.svg?height=400&width=600" alt="Ee Laine" fill className="object-cover" />
                   </div>
                   <p className="text-muted-foreground">
-                    "In short, she is someone you can definitely count on. Her journey to success has been an inspiring
+                    &quot;In short, she is someone you can definitely count on. Her journey to success has been an inspiring
                     one to many and myself. I am especially impressed by the efforts and patience she put in to drive
                     business and nurturing talents at the same time for the organization. If you are looking out to
-                    someone to manage and grow your business, I highly recommend her."
+                    someone to manage and grow your business, I highly recommend her.&quot;
                   </p>
                 </CardContent>
                 <CardFooter className="text-sm border-t pt-4 mt-auto">
@@ -176,10 +176,10 @@ export default function TestimonialsPage() {
                     <Image src="/placeholder.svg?height=400&width=600" alt="David L." fill className="object-cover" />
                   </div>
                   <p className="text-muted-foreground">
-                    "After working with Dealitz, I secured partnerships with luxury hotel chains and travel brands that
-                    previously wouldn't even respond to my inquiries. Louise's team crafted a compelling pitch that
+                    &quot;After working with Dealitz, I secured partnerships with luxury hotel chains and travel brands that
+                    previously wouldn&apos;t even respond to my inquiries. Louise&apos;s team crafted a compelling pitch that
                     highlighted my unique value proposition. They also negotiated additional perks beyond just payment,
-                    like extended stays and experiences for content creation."
+                    like extended stays and experiences for content creation.&quot;
                   </p>
                 </CardContent>
                 <CardFooter className="text-sm border-t pt-4 mt-auto">
@@ -206,10 +206,10 @@ export default function TestimonialsPage() {
                     <Image src="/placeholder.svg?height=400&width=600" alt="Emma R." fill className="object-cover" />
                   </div>
                   <p className="text-muted-foreground">
-                    "Dealitz helped me transition from one-off sponsored posts to long-term ambassador roles with major
-                    fashion brands. Their industry knowledge and connections opened doors I couldn't on my own. They
+                    &quot;Dealitz helped me transition from one-off sponsored posts to long-term ambassador roles with major
+                    fashion brands. Their industry knowledge and connections opened doors I couldn&apos;t on my own. They
                     also helped me diversify my revenue streams by securing licensing deals for my own fashion line.
-                    Game changer!"
+                    Game changer!&quot;
                   </p>
                 </CardContent>
                 <CardFooter className="text-sm border-t pt-4 mt-auto">
@@ -236,10 +236,10 @@ export default function TestimonialsPage() {
                     <Image src="/placeholder.svg?height=400&width=600" alt="Jason W." fill className="object-cover" />
                   </div>
                   <p className="text-muted-foreground">
-                    "As a gaming creator, I was stuck in the cycle of low-paying sponsorships. Dealitz completely
+                    &quot;As a gaming creator, I was stuck in the cycle of low-paying sponsorships. Dealitz completely
                     changed that by helping me secure partnerships with premium gaming hardware brands and even
                     non-endemic brands looking to reach gamers. Their understanding of both the creator economy and
-                    brand objectives is unmatched."
+                    brand objectives is unmatched.&quot;
                   </p>
                 </CardContent>
                 <CardFooter className="text-sm border-t pt-4 mt-auto">

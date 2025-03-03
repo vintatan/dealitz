@@ -45,7 +45,7 @@ export default function Home() {
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
                   Expert negotiation services for content creators. We help you secure better deals with top brands like
-                  L'Oréal, SK-II, and more.
+                  L&apos;Oréal, SK-II, and more.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" asChild>
@@ -89,7 +89,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent className="flex-1">
                   <div className="text-4xl font-bold mb-4">$97</div>
-                  <p className="text-sm">Money-back guarantee if we don't secure an additional $1,000 in brand deals</p>
+                  <p className="text-sm">Money-back guarantee if we don&apos;t secure an additional $1,000 in brand deals</p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -124,7 +124,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent className="flex-1">
                   <div className="text-4xl font-bold mb-4">$497</div>
-                  <p className="text-sm">Money-back guarantee if we don't secure an additional $5,000 in brand deals</p>
+                  <p className="text-sm">Money-back guarantee if we don&apos;t secure an additional $5,000 in brand deals</p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -162,7 +162,7 @@ export default function Home() {
                 <CardContent className="flex-1">
                   <div className="text-4xl font-bold mb-4">$997</div>
                   <p className="text-sm">
-                    Money-back guarantee if we don't secure an additional $10,000 in brand deals
+                    Money-back guarantee if we don&apos;t secure an additional $10,000 in brand deals
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
@@ -203,7 +203,7 @@ export default function Home() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Success Stories</h2>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  See how we've helped content creators increase their brand deal value
+                  See how we&apos;ve helped content creators increase their brand deal value
                 </p>
               </div>
             </div>
@@ -222,8 +222,8 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm">
-                    "Working with Dealitz transformed my brand partnerships. They negotiated a deal with L'Oréal that
-                    was 3x my previous rate. Their expertise and industry connections are invaluable."
+                    &quot;Working with Dealitz transformed my brand partnerships. They negotiated a deal with L&apos;Oréal that
+                    was 3x my previous rate. Their expertise and industry connections are invaluable.&quot;
                   </p>
                 </CardContent>
                 <CardFooter className="text-sm text-muted-foreground">Rate increase: 200%</CardFooter>
@@ -242,8 +242,8 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm">
-                    "I was undervaluing my content for years. Dealitz helped me secure a 6-figure annual partnership
-                    with a major tech brand that I never thought possible."
+                    &quot;I was undervaluing my content for years. Dealitz helped me secure a 6-figure annual partnership
+                    with a major tech brand that I never thought possible.&quot;
                   </p>
                 </CardContent>
                 <CardFooter className="text-sm text-muted-foreground">Rate increase: 350%</CardFooter>
@@ -276,7 +276,7 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Brands We've Worked With</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Brands We&apos;ve Worked With</h2>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
                   Louise has negotiated successful partnerships with leading global brands
                 </p>

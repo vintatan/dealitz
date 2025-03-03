@@ -59,7 +59,7 @@ export default function ServicesPage() {
                 <CardContent className="flex-1">
                   <div className="text-4xl font-bold mb-4">$97</div>
                   <p className="text-sm text-muted-foreground">
-                    Money-back guarantee if we don't secure an additional $1,000 in brand deals
+                    Money-back guarantee if we don&apos;t secure an additional $1,000 in brand deals
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
@@ -100,7 +100,7 @@ export default function ServicesPage() {
                 <CardContent className="flex-1">
                   <div className="text-4xl font-bold mb-4">$497</div>
                   <p className="text-sm text-muted-foreground">
-                    Money-back guarantee if we don't secure an additional $5,000 in brand deals
+                    Money-back guarantee if we don&apos;t secure an additional $5,000 in brand deals
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
@@ -143,7 +143,7 @@ export default function ServicesPage() {
                 <CardContent className="flex-1">
                   <div className="text-4xl font-bold mb-4">$997</div>
                   <p className="text-sm text-muted-foreground">
-                    Money-back guarantee if we don't secure an additional $10,000 in brand deals
+                    Money-back guarantee if we don&apos;t secure an additional $10,000 in brand deals
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">

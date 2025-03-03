@@ -177,9 +177,9 @@ export default function ContactPage() {
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">What if I'm not satisfied with the results?</h3>
+                <h3 className="text-xl font-bold">What if I&apos;m not satisfied with the results?</h3>
                 <p className="text-muted-foreground">
-                  We offer a satisfaction guarantee. If we don't achieve the promised rate increase, we'll continue
+                  We offer a satisfaction guarantee. If we don&apos;t achieve the promised rate increase, we&apos;ll continue
                   working with you at no additional cost until we do.
                 </p>
               </div>
