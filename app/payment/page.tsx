@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { Elements } from '@stripe/react-stripe-js'
-import { loadStripe } from '@stripe/stripe-js'
+import { loadStripe, StripeElementsOptions } from '@stripe/stripe-js'
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -91,10 +91,10 @@ export default function PaymentPage({
 
   const selectedService = serviceDetails[service]
 
-  const options = {
+  const options: StripeElementsOptions = {
     clientSecret,
     appearance: {
-      theme: 'stripe',
+      theme: 'stripe' as const,
     },
   }
 
