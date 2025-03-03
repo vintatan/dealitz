@@ -2,7 +2,13 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 import { PaymentForm } from '@/components/ui/payment-form'
 
 export default function PaymentPage({
@@ -42,11 +48,11 @@ export default function PaymentPage({
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <div className="flex items-center gap-2 mb-8">
-              <Button variant="ghost" size="sm" asChild>
-                <Link href="/services">
-                  <ArrowLeft className="h-4 w-4 mr-2" />
-                  Back to Services
+            <div className="flex items-center space-x-4 mb-8">
+              <Button variant="outline" asChild>
+                <Link href="/">
+                  <ArrowLeft className="mr-2 h-4 w-4" />
+                  Back to Home
                 </Link>
               </Button>
             </div>

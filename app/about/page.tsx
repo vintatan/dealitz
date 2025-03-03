@@ -45,7 +45,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Founder</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Meet Your Consultant</h2>
                 <h3 className="text-xl font-semibold">Louise Leong</h3>
                 <p className="text-muted-foreground">
                   Strategic marketing and business leader with a proven track record of driving growth, digital
