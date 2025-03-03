@@ -11,6 +11,16 @@ import {
 } from "@/components/ui/card"
 import { PaymentForm } from '@/components/ui/payment-form'
 
+interface ServiceDetail {
+  name: string
+  description: string
+  features: string[]
+}
+
+interface ServiceDetails {
+  [key: string]: ServiceDetail
+}
+
 export default function PaymentPage({
   searchParams,
 }: {
@@ -18,23 +28,41 @@ export default function PaymentPage({
 }) {
   const { service, price } = searchParams
   
-  const serviceDetails = {
+  const serviceDetails: ServiceDetails = {
     'emerging': {
       name: 'Emerging Creator',
       description: 'For creators with 10K-50K followers',
-      guarantee: '$1,000 in brand deals'
+      features: [
+        'Brand deal value assessment',
+        'Rate card creation',
+        'Negotiation strategy session',
+        'Contract review',
+        'Money-back guarantee if we don\'t secure an additional $1,000 in brand deals'
+      ]
     },
     'established': {
       name: 'Established Creator',
       description: 'For creators with 50K-500K followers',
-      guarantee: '$5,000 in brand deals'
+      features: [
+        'Everything in Emerging Creator',
+        'Personalized outreach strategy',
+        'Monthly strategy calls',
+        'Money-back guarantee if we don\'t secure an additional $5,000 in brand deals'
+      ]
     },
     'elite': {
       name: 'Influencer Elite',
       description: 'For creators with 500K+ followers',
-      guarantee: '$10,000 in brand deals'
+      features: [
+        'Everything in Established Creator',
+        'Dedicated account manager',
+        'Weekly strategy calls',
+        'Money-back guarantee if we don\'t secure an additional $10,000 in brand deals'
+      ]
     }
-  }[service] || serviceDetails.emerging
+  }
+
+  const selectedService = serviceDetails[service]
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -60,9 +88,8 @@ export default function PaymentPage({
               <div className="space-y-4">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl">Complete Your Purchase</h1>
                 <div className="space-y-2">
-                  <h2 className="text-xl font-semibold">{serviceDetails.name}</h2>
-                  <p className="text-muted-foreground">{serviceDetails.description}</p>
-                  <p className="text-muted-foreground">Money-back guarantee if we don&apos;t secure an additional {serviceDetails.guarantee}</p>
+                  <h2 className="text-xl font-semibold">{selectedService.name}</h2>
+                  <p className="text-muted-foreground">{selectedService.description}</p>
                 </div>
                 <div className="text-4xl font-bold">${price}</div>
               </div>
@@ -72,10 +99,20 @@ export default function PaymentPage({
                   <CardDescription>Enter your payment information securely</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <PaymentForm 
-                    amount={parseInt(price)} 
-                    service={service} 
-                  />
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="font-medium mb-2">Package Includes:</h3>
+                      <ul className="list-disc list-inside space-y-1">
+                        {selectedService.features.map((feature, index) => (
+                          <li key={index}>{feature}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <PaymentForm 
+                      amount={Number(price)} 
+                      service={service} 
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </div>
