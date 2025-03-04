@@ -1,18 +1,8 @@
 import { NextResponse } from 'next/server'
-import nodemailer from 'nodemailer'
+import { Resend } from 'resend'
 
+const resend = new Resend(process.env.RESEND_API_KEY)
 const RECIPIENT_EMAILS = ['tatanvincent@gmail.com', 'louiseleong@gmail.com']
-
-// Create a transporter using SMTP
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT),
-  secure: true,
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASSWORD,
-  },
-})
 
 export async function POST(request: Request) {
   try {
@@ -26,30 +16,30 @@ export async function POST(request: Request) {
       )
     }
 
-    // Send email to both recipients
-    await transporter.sendMail({
-      from: process.env.SMTP_USER,
-      to: RECIPIENT_EMAILS.join(', '), // Sends to both emails
+    // Send email using Resend
+    const { data, error } = await resend.emails.send({
+      from: 'Dealitz Contact Form <onboarding@resend.dev>',
+      to: RECIPIENT_EMAILS,
       replyTo: email,
       subject: `[Dealitz] New Contact Form Submission from ${name}`,
-      text: `
-Name: ${name}
-Email: ${email}
-Message: ${message}
-
----
-This email was sent from the Dealitz contact form.
-      `,
       html: `
-<h2>New Contact Form Submission</h2>
-<p><strong>Name:</strong> ${name}</p>
-<p><strong>Email:</strong> ${email}</p>
-<p><strong>Message:</strong></p>
-<p>${message.replace(/\n/g, '<br>')}</p>
-<hr>
-<p><small>This email was sent from the Dealitz contact form.</small></p>
+        <h2>New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message.replace(/\n/g, '<br>')}</p>
+        <hr>
+        <p><small>This email was sent from the Dealitz contact form.</small></p>
       `,
     })
+
+    if (error) {
+      console.error('Email sending error:', error)
+      return NextResponse.json(
+        { error: 'Failed to send message' },
+        { status: 500 }
+      )
+    }
 
     return NextResponse.json({ success: true })
   } catch (error) {
