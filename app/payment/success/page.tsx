@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { CheckCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
-export default function PaymentSuccess({
+export default function PaymentSuccessPage({
   searchParams,
 }: {
   searchParams: { service: string; amount: string }

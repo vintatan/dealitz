@@ -60,10 +60,12 @@ export default function PaymentPage({
       name: 'Emerging Creator',
       description: 'For creators with 10K-50K followers',
       features: [
-        'Brand deal value assessment',
-        'Rate card creation',
-        'Negotiation strategy session',
-        'Contract review',
+        'Brand deal rate assessment',
+        'Negotiation strategy',
+        'Personal branding strategy',
+        'Long term partnership strategy',
+        '30-day email support',
+        'Guaranteed 50% rate increase',
         'Money-back guarantee if we don\'t secure an additional $1,000 in brand deals'
       ]
     },
@@ -72,8 +74,9 @@ export default function PaymentPage({
       description: 'For creators with 50K-500K followers',
       features: [
         'Everything in Emerging Creator',
-        'Personalized outreach strategy',
-        'Monthly strategy calls',
+        'Brand partnership strategy',
+        'Networking strategy',
+        '60-day priority support',
         'Money-back guarantee if we don\'t secure an additional $5,000 in brand deals'
       ]
     },
@@ -82,8 +85,9 @@ export default function PaymentPage({
       description: 'For creators with 500K+ followers',
       features: [
         'Everything in Established Creator',
-        'Dedicated account manager',
-        'Weekly strategy calls',
+        'Elevated partnership strategy',
+        'Access to exclusive events', 
+        'Revenue diversification strategy',
         'Money-back guarantee if we don\'t secure an additional $10,000 in brand deals'
       ]
     }
@@ -108,15 +112,6 @@ export default function PaymentPage({
 
   return (
     <main className="container max-w-4xl py-12">
-      <div className="flex items-center space-x-4 mb-8">
-        <Button variant="outline" asChild>
-          <Link href="/">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Home
-          </Link>
-        </Button>
-      </div>
-
       <Card>
         <CardHeader>
           <CardTitle>{selectedService.name}</CardTitle>

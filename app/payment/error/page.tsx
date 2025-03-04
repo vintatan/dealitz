@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { XCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
-export default function PaymentError({
+export default function PaymentErrorPage({
   searchParams,
 }: {
   searchParams: { message: string }

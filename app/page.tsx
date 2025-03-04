@@ -8,36 +8,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-            <span className="text-primary">Deal</span>itz
-          </Link>
-          <nav className="flex items-center space-x-8">
-            <Link href="/" className="text-foreground/60 hover:text-foreground">
-              Home
-            </Link>
-            <Link href="/about" className="text-foreground/60 hover:text-foreground">
-              About
-            </Link>
-            <Link href="/testimonials" className="text-foreground/60 hover:text-foreground">
-              Testimonials
-            </Link>
-            <Link href="/contact" className="text-foreground/60 hover:text-foreground">
-              Contact
-            </Link>
-          </nav>
-          <Button asChild>
-            <Link 
-              href="https://calendar.app.google/wB1omY677WmGHPtX9" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              Book a Consultation
-            </Link>
-          </Button>
-        </div>
-      </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background to-muted">
           <div className="container px-4 md:px-6">
@@ -47,8 +17,7 @@ export default function Home() {
                   Maximize Your Brand Deal Value
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Expert negotiation services for content creators. We help you secure better deals with top brands like
-                  L&apos;Oréal, SK-II, and more.
+                  We are on a mission to help content creators maximize their value and build sustainable partnerships with top brands.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" asChild>
@@ -106,11 +75,15 @@ export default function Home() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Negotiation strategy session</span>
+                      <span>Negotiation strategy</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Contract review</span>
+                      <span>Personal branding strategy</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span>Long term partnership strategy</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -141,19 +114,15 @@ export default function Home() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Direct negotiation with brands</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                       <span>Brand partnership strategy</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>60-day priority support</span>
+                      <span>Networking strategy</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Guaranteed 30% rate increase</span>
+                      <span>60-day priority support</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -180,19 +149,15 @@ export default function Home() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Exclusive brand introductions</span>
+                      <span>Elevated partnership strategy</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Long-term partnership strategy</span>
+                      <span>Access to exclusive events</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Dedicated account manager</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Guaranteed 50% rate increase</span>
+                      <span>Revenue diversification strategy</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -257,38 +222,41 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-24 bg-background">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="relative h-[400px] w-full overflow-hidden rounded-xl">
-              <Image
-                  src="/louise-leong.jpeg"
-                  alt="Louise Leong, Founder & Lead Consultant"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Meet Your Consultant</h2>
-                <h3 className="text-xl font-semibold">Louise Leong, Founder & Lead Consultant</h3>
-                <p className="text-muted-foreground">
-                  I&apos;m a strategic marketing and business leader with a proven track record of driving growth, digital
-                  transformation, and high-impact partnerships across APAC. I specialize in scaling businesses in Tech,
-                  Beauty, and FMCG through omnichannel marketing and innovative go-to-market strategies. My expertise
-                  lies in brand strategy, consumer insights, and data-driven decision-making.
-                </p>
-                <p className="text-muted-foreground">
-                  My experience leading content creators, regional client and agency partnerships includes doubling FMCG revenue, driving 
-                  growth in SEA&apos;s Health & Beauty category, and leading digital commerce innovations featured
-                  in Forbes Asia and Meta global case studies.
-                </p>
-                <div className="flex gap-4">
-                  <Button variant="outline" asChild>
-                    <Link href="https://www.linkedin.com/in/louise-leong/" target="_blank" rel="noopener noreferrer">
-                      View LinkedIn Profile
-                    </Link>
-                  </Button>
+        <section className="py-24 bg-background">
+          <div className="container">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl font-bold mb-6">Meet Your Consultant</h2>
+                <div className="space-y-4">
+                  <p>
+                    As your Creator Value Strategist, I help content creators understand their worth through brand-side insights and strategic positioning guidance. With industry expertise and clear frameworks, I equip creators like you to develop a distinctive personal brand, recognize your unique value proposition, articulate your story effectively, and monetize your influence in today&apos;s evolving digital landscape.
+                  </p>
+                  <p>
+                    As an accomplished marketing strategist and creator economy expert, I&apos;ve built a reputation for elevating influencer partnerships across global markets. My specialty lies in scaling creator businesses within the Tech, Beauty, Retail, and FMCG sectors. I&apos;ve orchestrated powerful creator partnerships with brands that authentically reflect creators&apos; personal values and creative vision.
+                  </p>
+                  <p>
+                    I&apos;ve led partnerships with global brands, regional powerhouses across Asia-Pacific, and beloved domestic companies that resonate with local audiences. My extensive background in brand management and agency leadership allows me to bridge the crucial gap between brands and creators, delivering exceptional results for both brand positioning and creator earnings. My work has been recognized in Forbes Asia and featured in Meta global case studies.
+                  </p>
+                  <p className="font-bold">
+                    Ready to maximize your earning potential and secure better brand deals? Book a strategy call today and let&apos;s elevate your creator business together.
+                  </p>
+                  <div className="pt-4">
+                    <Button asChild size="lg">
+                      <Link href="https://calendar.app.google/wB1omY677WmGHPtX9" target="_blank" rel="noopener noreferrer">
+                        Book a Free Consultation
+                      </Link>
+                    </Button>
+                  </div>
                 </div>
+              </div>
+              <div className="lg:order-first">
+                <Image
+                  src="/louise-leong.jpeg"
+                  alt="Louise Leong"
+                  width={500}
+                  height={500}
+                  className="rounded-lg"
+                />
               </div>
             </div>
           </div>
@@ -314,73 +282,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="w-full py-6 bg-background border-t">
-        <div className="container px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="space-y-4">
-              <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-                <span className="text-primary">Deal</span>itz
-              </Link>
-              <p className="text-sm text-muted-foreground">
-                Expert brand deal negotiation services for content creators of all sizes.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-sm font-medium">Services</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="/services" className="text-muted-foreground hover:text-foreground">
-                    Emerging Creator
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services" className="text-muted-foreground hover:text-foreground">
-                    Established Creator
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services" className="text-muted-foreground hover:text-foreground">
-                    Influencer Elite
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-sm font-medium">Company</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="/about" className="text-muted-foreground hover:text-foreground">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/testimonials" className="text-muted-foreground hover:text-foreground">
-                    Testimonials
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="text-muted-foreground hover:text-foreground">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-sm font-medium">Legal</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="/terms" className="text-muted-foreground hover:text-foreground">
-                    Terms of Service
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Dealitz. All rights reserved.
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
