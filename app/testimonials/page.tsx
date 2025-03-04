@@ -37,9 +37,9 @@ export default function TestimonialsPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Success Stories</h1>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Linkedin Testimony</h1>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  See how we&apos;ve helped content creators increase their brand deal value
+                  Read what industry leaders say about Louise Leong's expertise and impact
                 </p>
               </div>
             </div>
@@ -62,14 +62,6 @@ export default function TestimonialsPage() {
                   <CardDescription>VP APAC Stackadapt | Advisor | Investor</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
-                  <div className="relative h-[200px] w-full overflow-hidden rounded-lg mb-4">
-                    <Image
-                      src="/placeholder.svg?height=400&width=600"
-                      alt="Liam McCarten"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
                   <p className="text-muted-foreground">
                     &quot;I had the pleasure of recruiting and working with Louise in her role of regional client partner at
                     Meta. What makes Louise stand out is her commitment to her clients and relationships she build in
@@ -102,14 +94,6 @@ export default function TestimonialsPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
-                  <div className="relative h-[200px] w-full overflow-hidden rounded-lg mb-4">
-                    <Image
-                      src="/placeholder.svg?height=400&width=600"
-                      alt="Meg Wardrop"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
                   <p className="text-muted-foreground">
                     &quot;Louise became a friend and mentor to me during my time at Meta. She is a person I look up to and
                     can turn to for honest advice when I need it. Louise has been an invaluable support in helping me
@@ -139,9 +123,6 @@ export default function TestimonialsPage() {
                   <CardDescription>Founder of Sp8rks | Driving Growth with SiMPLE© Methodology</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
-                  <div className="relative h-[200px] w-full overflow-hidden rounded-lg mb-4">
-                    <Image src="/placeholder.svg?height=400&width=600" alt="Ee Laine" fill className="object-cover" />
-                  </div>
                   <p className="text-muted-foreground">
                     &quot;In short, she is someone you can definitely count on. Her journey to success has been an inspiring
                     one to many and myself. I am especially impressed by the efforts and patience she put in to drive
@@ -153,96 +134,6 @@ export default function TestimonialsPage() {
                   <div className="flex justify-between w-full items-center">
                     <span className="font-medium">Rate increase: 180%</span>
                     <span className="text-muted-foreground">Fitness & Wellness</span>
-                  </div>
-                </CardFooter>
-              </Card>
-              <Card className="flex flex-col">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                  </div>
-                  <CardTitle>David L.</CardTitle>
-                  <CardDescription>Travel Vlogger, 320K followers</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-1">
-                  <div className="relative h-[200px] w-full overflow-hidden rounded-lg mb-4">
-                    <Image src="/placeholder.svg?height=400&width=600" alt="David L." fill className="object-cover" />
-                  </div>
-                  <p className="text-muted-foreground">
-                    &quot;After working with Dealitz, I secured partnerships with luxury hotel chains and travel brands that
-                    previously wouldn&apos;t even respond to my inquiries. Louise&apos;s team crafted a compelling pitch that
-                    highlighted my unique value proposition. They also negotiated additional perks beyond just payment,
-                    like extended stays and experiences for content creation.&quot;
-                  </p>
-                </CardContent>
-                <CardFooter className="text-sm border-t pt-4 mt-auto">
-                  <div className="flex justify-between w-full items-center">
-                    <span className="font-medium">Rate increase: 250%</span>
-                    <span className="text-muted-foreground">Travel & Lifestyle</span>
-                  </div>
-                </CardFooter>
-              </Card>
-              <Card className="flex flex-col">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                  </div>
-                  <CardTitle>Emma R.</CardTitle>
-                  <CardDescription>Fashion Creator, 180K followers</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-1">
-                  <div className="relative h-[200px] w-full overflow-hidden rounded-lg mb-4">
-                    <Image src="/placeholder.svg?height=400&width=600" alt="Emma R." fill className="object-cover" />
-                  </div>
-                  <p className="text-muted-foreground">
-                    &quot;Dealitz helped me transition from one-off sponsored posts to long-term ambassador roles with major
-                    fashion brands. Their industry knowledge and connections opened doors I couldn&apos;t on my own. They
-                    also helped me diversify my revenue streams by securing licensing deals for my own fashion line.
-                    Game changer!&quot;
-                  </p>
-                </CardContent>
-                <CardFooter className="text-sm border-t pt-4 mt-auto">
-                  <div className="flex justify-between w-full items-center">
-                    <span className="font-medium">Rate increase: 220%</span>
-                    <span className="text-muted-foreground">Fashion & Style</span>
-                  </div>
-                </CardFooter>
-              </Card>
-              <Card className="flex flex-col">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                    <Star className="h-5 w-5 fill-primary text-primary" />
-                  </div>
-                  <CardTitle>Jason W.</CardTitle>
-                  <CardDescription>Gaming Creator, 550K followers</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-1">
-                  <div className="relative h-[200px] w-full overflow-hidden rounded-lg mb-4">
-                    <Image src="/placeholder.svg?height=400&width=600" alt="Jason W." fill className="object-cover" />
-                  </div>
-                  <p className="text-muted-foreground">
-                    &quot;As a gaming creator, I was stuck in the cycle of low-paying sponsorships. Dealitz completely
-                    changed that by helping me secure partnerships with premium gaming hardware brands and even
-                    non-endemic brands looking to reach gamers. Their understanding of both the creator economy and
-                    brand objectives is unmatched.&quot;
-                  </p>
-                </CardContent>
-                <CardFooter className="text-sm border-t pt-4 mt-auto">
-                  <div className="flex justify-between w-full items-center">
-                    <span className="font-medium">Rate increase: 300%</span>
-                    <span className="text-muted-foreground">Gaming & Entertainment</span>
                   </div>
                 </CardFooter>
               </Card>
@@ -282,7 +173,7 @@ export default function TestimonialsPage() {
         <section className="w-full py-12 md:py-24 bg-primary text-primary-foreground">
           <div className="container px-4 md:px-6 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
-              Ready to Join Our Success Stories?
+              Ready to Join?
             </h2>
             <p className="max-w-[700px] mx-auto mb-8 text-primary-foreground/90 md:text-xl">
               Book a free consultation to discover how we can help you increase your brand deal rates.
