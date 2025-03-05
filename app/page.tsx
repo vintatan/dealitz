@@ -38,7 +38,7 @@ export default function Home() {
               </div>
               <div className="relative aspect-video w-full overflow-hidden rounded-xl">
                 <iframe
-                  src="https://www.youtube.com/embed/TAZ5bzxrpZM"
+                  src="https://www.youtube.com/embed/5nh8Ulf0jk4"
                   title="Dealitz Brand Deal Services"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
